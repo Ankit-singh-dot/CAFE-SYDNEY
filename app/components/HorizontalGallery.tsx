@@ -80,7 +80,20 @@ export default function HorizontalGallery() {
                             </div>
                         ))}
 
-                        {/* Spacer to ensure last item is fully viewable */}
+                        {/* Final CTA Card to prevent "black void" */}
+                        <div className="relative h-[50vh] md:h-[60vh] w-[70vw] md:w-[40vw] flex-shrink-0 flex flex-col justify-center items-center text-center bg-[#252525] border border-white/10 px-8">
+                            <h3 className="text-3xl md:text-5xl font-serif text-white mb-6">
+                                Experience It All
+                            </h3>
+                            <p className="text-white/60 mb-8 max-w-sm font-light">
+                                From the views to the food, every moment is curated for you.
+                            </p>
+                            <a href="#reservations" className="px-8 py-4 border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 uppercase text-xs tracking-[0.2em] font-bold">
+                                Book a Table
+                            </a>
+                        </div>
+
+                        {/* Small spacer after CTA */}
                         <div className="w-[10vw] flex-shrink-0"></div>
                     </motion.div>
                 </div>
